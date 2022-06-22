@@ -1,5 +1,3 @@
-
-
 const secondHand = document.querySelector('[data-second-hand]');
 const minuteHand = document.querySelector('[data-minute-hand]');
 const hourHands = document.querySelector('[data-hour-hand]');
@@ -13,7 +11,6 @@ const setClock = () => {
     setRotation(secondHand, secondRatio);
     setRotation(minuteHand, minuteRatio);
     setRotation(hourHands, hourRatio);
-    console.log('animal')
 }
 
 const setRotation = (element, rotationRatio) => {
