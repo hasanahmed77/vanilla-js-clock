@@ -3,7 +3,8 @@
 *, *::before, *::after {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+    font-weight: normal;
+    /* color: white; */
 }
 
 body {
@@ -51,7 +52,7 @@ body {
     position: absolute;
     bottom: 50%;
     left: 50%;
-    border: 1px solid white;
+    border: 1px solid #011f44;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     transform-origin: bottom;
@@ -62,31 +63,34 @@ body {
 .clock::after {
     content: '';
     position: absolute;
-    background-color: black;
+    background-color: #011f44;
     z-index: 11;
     width: 15px;
     height: 15px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 50%;
+    border-radius: 50%;
 }
 
 .clock .hand.second {
+    border: 1px solid #DE0915;
     width: 3px;
     height: 45%;
-    background-color: red;
+    background-color: #DE0915;
 }
 
 .clock .hand.minute {
+    z-index: 12;
     width: 7px;
     height: 40%;
-    background-color: black;
+    background-color: #011f44;
 }
 
-.clock .hand.minute {
+.clock .hand.hour {
+    z-index: 13;
     width: 10px;
     height: 35%;
-    background-color: black;
+    background-color: #011f44;
 }
 
